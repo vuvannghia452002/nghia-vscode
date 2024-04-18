@@ -1,0 +1,7 @@
+{
+  "nghia_print": {
+    "prefix": "nghia_print",
+    "body": ["print(f\"🚀 {${nghia}}\")"],
+    "description": "nghia_print"
+  }
+}

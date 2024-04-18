@@ -1,0 +1,31 @@
+{
+  "nghia_comment": {
+    "prefix": "nghia_comment",
+    "body": ["%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n"],
+    "description": "nghia_comment"
+  },
+  "nghia_start": {
+    "prefix": "nghia_start",
+
+    "body": [
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\documentclass{article}",
+      "\\begin{document}",
+      "First document. This is a simple example, with no extra parameters or packages included.",
+      "\\end{document}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n"
+    ],
+    "description": "nghia_start"
+  },
+  "nghia_picture": {
+    "prefix": "nghia_picture",
+    "body": [
+      "\\begin{figure}[H]",
+      "\\centering",
+      "\\includegraphics[scale = 0.15]{${1:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}}",
+      "\\caption{${2:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}}",
+      "\\end{figure}"
+    ],
+    "description": "nghia_picture"
+  }
+}
