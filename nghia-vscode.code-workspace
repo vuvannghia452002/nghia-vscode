@@ -13,6 +13,12 @@
 	  //! Cố định
 	  // xxxxxxxxx
 	  "security.workspace.trust.untrustedFiles": "open",
+  
+	  // xxxxxxxxx
+	  "markdown.preview.scrollEditorWithPreview": false,
+	  // xxxxxxxxx
+	  "markdown.preview.scrollPreviewWithEditor": false,
+  
 	  // xxxxxxxxx
 	  "editor.glyphMargin": true,
 	  // xxxxxxxxx
@@ -71,6 +77,12 @@
 	  },
 	  "[ignore]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format"
+	  },
+	  "[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	  },
+	  "[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
 	  },
 	  // "[javascript]": {
 	  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -145,7 +157,9 @@
 	  // xxxxxxxxxxxxxxxxxxxxxxxx
 	  "material-icon-theme.folders.color": "#ff79b4",
 	  // folder
-	  //
+	  "material-icon-theme.folders.associations": {
+		"latex": "docs"
+	  },
 	  // file...
 	  "material-icon-theme.files.associations": {
 		"README.md": "3d",
@@ -251,6 +265,11 @@
 	  ],
 	  // xxxxxxxxxxxxxxxxxxxxxxxx
 	  "notebook.output.textLineLimit": 3000,
+  
+	  //
+	  "terminal.integrated.sendKeybindingsToShell": true,
+	  //
+  
 	  // xxxxxxxxxxxxxxxxxxxxxxxx
 	  "code-runner.executorMap": {
 		// "bat": " cd $dir && $fileName",
