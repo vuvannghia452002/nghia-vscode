@@ -67,3 +67,4 @@ with open("../../.vscode/extensions.json", "w") as json_file:
 # "redhat.vscode-yaml"
 # "austenc.tailwind-docs"
 # "alefragnani.bookmarks"
+
