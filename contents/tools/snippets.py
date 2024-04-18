@@ -19,4 +19,3 @@ for root, dirs, files in os.walk(source_folder):
         destination_path = os.path.join(destination_folder, file)
 
         shutil.copy2(source_path, destination_path)
-ngh
