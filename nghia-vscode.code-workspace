@@ -84,6 +84,9 @@
     "[latex]": {
       "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
+    "[github-actions-workflow]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     // "[javascript]": {
     // "editor.defaultFormatter": "esbenp.prettier-vscode"
     // },
@@ -103,8 +106,7 @@
     //! Có thể thay đổi nhiều
     //! Có thể thay đổi nhiều
     // xxxxxxxxxxxxxxxxxxxxxxxx
-    // "http.proxy":"http://localhost:10809",
-    // "http.proxy":"http://localhost:2802",
+    "http.proxy": "http://localhost:10809",
     // xxxxxxxxxxxxxxxxxxxxxxxx
     //! thay đổi khi cần kiểm tra chính tả
     // "cSpell.enabled": true,
@@ -294,7 +296,11 @@
       // "markdown": " if [ $fileName = README.md ]; then ( cd others/push && python push.py ); else ( echo NO PUSH GIT); fi;",
 
       // connect_string="mysql -h $hostname -u $username -p$password $database"
-      "sql": " cd $dir && mysql -u root -p < $fileName "
+      "sql": " cd $dir && mysql -u root -p < $fileName",
+      "json": " cd $dir && scrapy  crawl  $fileNameWithoutExt-crawler  -o    $fileName "
+      // "json": " cd $dir && echo $fileNameWithoutExt"
+// <!--   topcv-crawler  -o topcv.json -->
+// "json": " cd $dir && echo $fileName"
     }
   },
   "extensions": {
