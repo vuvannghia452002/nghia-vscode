@@ -297,7 +297,7 @@
 
       // connect_string="mysql -h $hostname -u $username -p$password $database"
       "sql": " cd $dir && mysql -u root -p < $fileName",
-      "json": " cd $dir && scrapy  crawl  $fileNameWithoutExt-crawler  -o    $fileName "
+      "json": " cd $dir &&  rm    $fileName       && scrapy  crawl  $fileNameWithoutExt-crawler  -o    $fileName"
       // "json": " cd $dir && echo $fileNameWithoutExt"
 // <!--   topcv-crawler  -o topcv.json -->
 // "json": " cd $dir && echo $fileName"
