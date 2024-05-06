@@ -281,7 +281,9 @@
       // "shellscript": " bash $fileName"
       "shellscript": " cd $dir && $fileName",
       "python": " cd $dir && python $fileName",
+      "javascript": " cd $dir && npm run start",
       // "javascript": " cd $dir && node $fileName",
+
       // "typescript": " cd $dir && npm run format && exit 0"
       // "typescript": " cd $dir && npm run format && npm run start:dev "
       // "typescript": " cd $dir && npm run format && NEST_DEBUG=true npm run start:dev "
@@ -297,10 +299,7 @@
 
       // connect_string="mysql -h $hostname -u $username -p$password $database"
       "sql": " cd $dir && mysql -u root -p < $fileName",
-      "json": " cd $dir &&  rm    $fileName       && scrapy  crawl  $fileNameWithoutExt-crawler  -o    $fileName"
-      // "json": " cd $dir && echo $fileNameWithoutExt"
-// <!--   topcv-crawler  -o topcv.json -->
-// "json": " cd $dir && echo $fileName"
+      "json": " cd $dir && rm $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName"
     }
   },
   "extensions": {
