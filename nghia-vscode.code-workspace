@@ -300,10 +300,13 @@
       // connect_string="mysql -h $hostname -u $username -p$password $database"
       "sql": " cd $dir && mysql -u root -p < $fileName",
 
+      "plaintext": "cd $dir && echo \"Đây là file $fileName\" ",
+
       // "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
       "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  ",
-      "txt": " cd $dir && echo 123"
-      // "txt": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  "
+      "properties": "cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
+
+      "pip-requirements": "cd $dir &&  pip install   -r   requirements.txt"
     }
   },
   "extensions": {
