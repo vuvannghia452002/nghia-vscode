@@ -305,7 +305,8 @@
       // "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
       "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  ",
       // "properties": "cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
-
+      "csv": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  ",
+      
       "pip-requirements": "cd $dir &&  pip install   -r   requirements.txt"
     }
   },
