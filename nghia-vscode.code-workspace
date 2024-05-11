@@ -303,11 +303,16 @@
       "plaintext": " cd $dir && echo \"Đây là file $fileName\" ",
 
       // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
-      "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
+      // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -O $fileName --nolog",
+      // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
+      "json": " cd $dir &&   scrapy crawl $fileNameWithoutExt-crawler -O $fileName ",
       // "properties": " cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
-      "properties": " cd $dir && source Scripts/activate ",
       // "properties": " cd $dir && source Scripts/activate && cd topcv && scrapy crawl topcv-crawler",
-      "csv": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
+      // "csv": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
+      // "csv": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -O $fileName ",
+
+      // "properties": " cd $dir && scrapy crawl $fileNameWithoutExt-crawler -O $fileName",
+      "properties": " cd $dir && source Scripts/activate ",
 
       "pip-requirements": " cd $dir && pip install -r requirements.txt"
     }
