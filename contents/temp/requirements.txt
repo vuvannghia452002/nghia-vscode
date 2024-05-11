@@ -1,8 +1,0 @@
-# Thư viện chính để crawl data là scrapy  
-scrapy
-# Thư viện dùng để xxxxxxxxx
-scrapy-user-agents
-# Thư viện dùng để xxxxxxxxx
-mysql-connector-python
-# scrapy-splash
-

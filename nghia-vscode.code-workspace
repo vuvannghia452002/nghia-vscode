@@ -300,16 +300,16 @@
       // connect_string="mysql -h $hostname -u $username -p$password $database"
       "sql": " cd $dir && mysql -u root -p < $fileName",
 
-      "plaintext": "cd $dir && echo \"Đây là file $fileName\" ",
+      "plaintext": " cd $dir && echo \"Đây là file $fileName\" ",
 
-      // "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
-      "json": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  ",
-      // "properties": "cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
-      "properties": "cd $dir && source Scripts/activate   ",
-      // "properties": "cd $dir && source Scripts/activate  && cd topcv && scrapy crawl topcv-crawler",
-      "csv": " cd $dir && echo \"\" >  $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName  ",
+      // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
+      "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
+      // "properties": " cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
+      "properties": " cd $dir && source Scripts/activate ",
+      // "properties": " cd $dir && source Scripts/activate && cd topcv && scrapy crawl topcv-crawler",
+      "csv": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
 
-      "pip-requirements": "cd $dir &&  pip install   -r   requirements.txt"
+      "pip-requirements": " cd $dir && pip install -r requirements.txt"
     }
   },
   "extensions": {
