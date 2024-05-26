@@ -11,3 +11,10 @@
 <!-- định dạng tab=2,4 -->
 
 <!-- tạo my key bỏad -->
+
+
+
+<!-- OrangeX4.latex-sympy-calculator -->
+<!-- pip install latex2sympy2 -->
+<!-- pip install sympy -->
+<!-- Thay Alt+X -->

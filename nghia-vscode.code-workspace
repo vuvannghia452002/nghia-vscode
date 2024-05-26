@@ -310,11 +310,22 @@
       "sql": " cd $dir && mysql -u root -p < $fileName",
 
       "plaintext": " cd $dir && echo \"Đây là file $fileName\" ",
+      "log": "     cd ~/Desktop/data-warehouse-crawl/contents/scrapy-projects && source Scripts/activate && cd $dir && rm log.log &&  python main.py ",
 
       // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName --nolog",
       // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -O $fileName --nolog",
       // "json": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
-      "json": " cd $dir &&   scrapy crawl $fileNameWithoutExt-crawler -O $fileName ",
+      // "json": " cd $dir &&   scrapy crawl $fileNameWithoutExt-crawler -O $fileName ",
+      
+      // "json": " cd $dir &&   scrapy crawl $fileNameWithoutExt-crawler -O $fileName ",
+      "json": " cd $dir &&   scrapy crawl $fileNameWithoutExt-crawler -O $fileName && prettier  topcv.json  ",
+
+
+
+
+
+
+
       // "properties": " cd $dir && scrapy crawl $fileNameWithoutExt-crawler -o $fileName",
       // "properties": " cd $dir && source Scripts/activate && cd topcv && scrapy crawl topcv-crawler",
       // "csv": " cd $dir && echo \"\" > $fileName && scrapy crawl $fileNameWithoutExt-crawler -o $fileName ",
